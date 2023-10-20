@@ -1,0 +1,119 @@
+@font-face{
+    font-family: 'dotted';
+    src: url("fonts/Ndot-55.otf");
+}
+@font-face {
+    font-family: 'normal';
+    src: url("fonts/NType82Mono-Regular.otf");
+}
+@font-face {
+    font-family: 'mono';
+    src: url("fonts/LetteraMonoLL.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+background-color: #E1E4EA;
+}
+
+.logo{
+    height: 45px;
+}
+header{
+    height: 90vh;
+    min-height: 640px;
+  
+    background-image: url("image/banner-org.webp");
+    position: relative;
+}
+@media(max-width:900px) {
+    header{
+        background-image: url("image/banner-mob.webp");
+    }
+}
+/* Add this CSS inside your media query for screens around 887px */
+
+@media (max-width: 887px) {
+    header {
+        background-size: cover; /* Ensure background covers the entire header */
+    }
+    .col-md-4 {
+        width: 100%; /* Make columns full width for screens around 887px */
+    }
+    /* Adjust any other styles causing overflow or issues on the right side */
+}
+
+.title{
+    position: absolute;
+    bottom: 120px;
+    left: 65px;
+}
+.discover{
+    border: none;
+    background-color: black;
+    color: white;
+    padding-top: 3px;
+    text-align: center;
+    padding-bottom: 2px;
+    
+}
+.buy-now{
+    border: none;
+    background-color: #FB471F;
+    color: white;
+    padding-top: 3px;
+    text-align: center;
+    padding-bottom: 2px;
+}
+.buy-now:hover{
+    background-color: black;
+}
+.discover:hover{
+    background-color: #FB471F
+}
+.footer li{
+    font-size: 10px; 
+    margin-left: 30px;
+    list-style: none;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+.orange-circle {
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Same as width to make it a circle */
+    background-color: orange; /* Change to the desired color */
+    border-radius: 50%; /* Makes it a circle */
+}
+.orange-circle-black{
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Same as width to make it a circle */
+    background-color: rgb(0, 0, 0); /* Change to the desired color */
+    border-radius: 50%; /* Makes it a circle */
+}
+#earColor{
+    display: none;
+}
+#watchColor{
+    display: none;
+}
+#chargerColor{
+    display: none;
+}
+.icon{
+    color: #424B54;
+}
+.icon:hover{
+    color: white;
+}
+.nav-text:hover
+{
+    cursor: pointer;
+    color: orange;
+}
+.text li:hover{
+    cursor: pointer;
+    color: orange;
+}
